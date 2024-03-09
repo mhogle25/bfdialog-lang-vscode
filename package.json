@@ -1,0 +1,25 @@
+{
+  "name": "bfdialog-lang",
+  "displayName": "BFDialog Lang",
+  "description": "Syntax highlighting for BFDialog lang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "bfdialog",
+      "aliases": ["BFDialog", "bfdialog"],
+      "extensions": [".bfdlg"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "bfdialog",
+      "scopeName": "source.bfdlg",
+      "path": "./syntaxes/bfdialog.tmLanguage.json"
+    }]
+  }
+}
