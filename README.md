@@ -10,7 +10,7 @@ Highlights all closures, strings, numbers, and single-term calls. Also highlight
 
 ## Requirements
 
-The bfo/dialog-textbox C# library
+The bfo/dialog-textbox C# library (UNDER CONSTRUCTION)
 
 ## Known Issues
 
