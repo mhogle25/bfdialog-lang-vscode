@@ -101,7 +101,11 @@
 				},
 				{
 					"name": "entity.name.function.bfdialog",
-					"match": "\\b(pause|echo|delay|nametag|speed|line|chapter)\\b"
+					"match": "\\b(echo)\\b"
+				},
+				{
+					"name": "entity.name.function.bfdialog",
+					"match": "\\b(pause|delay|nametag|speed|line|chapter)\\b"
 				}
 			]
 		}
