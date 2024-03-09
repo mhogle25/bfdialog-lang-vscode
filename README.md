@@ -6,7 +6,7 @@ BFDialog is a dialog scripting syntax that has high customizability and simple m
 
 Works on files with extension `.bfdlg`
 
-Highlights all closures, strings, numbers, and single-term calls. Highlights default CLI control commands: [ `if`, `else`, `reduce` ], dialog control commands: [ `end` ], default CLI operations: [ `echo` ], and dialog operations: [ `pause`, `delay`, `speed`, `line`, `chapter`, `nametag` ]
+Highlights all closures, strings, numbers, and single-term calls. Highlights default CLI control commands: `[ if, else, reduce ]`, dialog control commands: `[ end ]`, default CLI operations: `[ echo ]`, and dialog operations: `[ pause, delay, speed, line, chapter, nametag ]`
 
 ## Requirements
 
