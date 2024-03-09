@@ -3,16 +3,67 @@
 	"name": "BFDialog",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"begin": "\\$\\{",  
+			"end": "\\}",        
+			"patterns": [
+				{
+					"include": "#keywords"
+				},
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#strings-single"
+				},
+				{
+					"include": "#constants-and-special-vars"
+				}
+			]
 		},
 		{
-			"include": "#strings"
+			"begin": "\\@\\{",     
+			"end": "\\}",
+			"patterns": [
+				{
+					"include": "#keywords"
+				},
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#strings-single"
+				},
+				{
+					"include": "#constants-and-special-vars"
+				}
+			]
 		},
 		{
-			"include": "#strings-single"
+			"begin": "\\%\\{",     
+			"end": "\\}",
+			"patterns": [
+				{
+					"include": "#keywords"
+				},
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#strings-single"
+				},
+				{
+					"include": "#constants-and-special-vars"
+				}
+			]
 		},
 		{
-			"include": "#constants-and-special-vars"
+			"begin": "\\!\\{",
+			"end": "\\}",
+			"patterns": [
+				{
+					"include": "#chapter"
+				}
+			]
 		}
 	],
 	"repository": {
@@ -20,7 +71,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.bfdialog",
-					"match": "\\b(if|else|reduce|echo)\\b"
+					"match": "\\b(if|else|reduce|end)\\b"
 				}
 			]
 		},
@@ -28,6 +79,10 @@
 			"name": "string.quoted.double.bfdialog",
 			"begin": "\"",
 			"end": "\""
+		},
+		"chapter": {
+			"name": "support.class.bfdialog",
+			"match": "."
 		},
 		"strings-single": {
 			"name": "string.quoted.single.bfdialog",
@@ -43,6 +98,10 @@
 				{
 					"name": "variable.language.bfdialog",
 					"match": "\\$\\S+"
+				},
+				{
+					"name": "entity.name.function.bfdialog",
+					"match": "\\b(echo|delay|nametag|speed|line|chapter)\\b"
 				}
 			]
 		}
