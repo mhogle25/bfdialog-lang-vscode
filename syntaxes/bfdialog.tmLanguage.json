@@ -101,7 +101,7 @@
 				},
 				{
 					"name": "entity.name.function.bfdialog",
-					"match": "\\b(echo|delay|nametag|speed|line|chapter)\\b"
+					"match": "\\b(pause|echo|delay|nametag|speed|line|chapter)\\b"
 				}
 			]
 		}
