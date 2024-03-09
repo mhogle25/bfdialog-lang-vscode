@@ -71,7 +71,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.bfdialog",
-					"match": "\\b(if|else|reduce|end)\\b"
+					"match": "\\b(if|else|reduce|echo)\\b"
+				},
+				{
+					"name": "keyword.control.bfdialog",
+					"match": "\\b(end)\\b"
 				}
 			]
 		},
@@ -98,10 +102,6 @@
 				{
 					"name": "variable.language.bfdialog",
 					"match": "\\$\\S+"
-				},
-				{
-					"name": "entity.name.function.bfdialog",
-					"match": "\\b(echo)\\b"
 				},
 				{
 					"name": "entity.name.function.bfdialog",
