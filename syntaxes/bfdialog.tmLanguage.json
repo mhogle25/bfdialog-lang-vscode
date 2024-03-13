@@ -18,17 +18,17 @@
 	"repository": {
 		"command": {
 			"name": "meta.embedded.inline.bfcli",
+			"patterns": [{ "include": "source.bfcli" }]
+		},
+		"chapter": {
+			"begin": "\\!\\{",
+			"end": "\\}",
 			"patterns": [
 				{
 					"name": "string.quoted.double.bfcli",
 					"match": "."
 				}
 			]
-		},
-		"chapter": {
-			"begin": "\\!\\{",
-			"end": "\\}",
-			"patterns": [{ "include": "#string" }]
 		},
 		"immediate-command": {
 			"begin": "\\$\\{",
