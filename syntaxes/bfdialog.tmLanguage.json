@@ -1,110 +1,49 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "BFDialog",
+	"scopeName": "source.bfdlg",
+	"name": "bfdialog",
 	"patterns": [
 		{
-			"begin": "\\$\\{",  
-			"end": "\\}",        
-			"patterns": [
-				{
-					"include": "#keywords"
-				},
-				{
-					"include": "#strings"
-				},
-				{
-					"include": "#strings-single"
-				},
-				{
-					"include": "#constants-and-special-vars"
-				}
-			]
+			"include": "#immediate-command"
 		},
 		{
-			"begin": "\\@\\{",     
-			"end": "\\}",
-			"patterns": [
-				{
-					"include": "#keywords"
-				},
-				{
-					"include": "#strings"
-				},
-				{
-					"include": "#strings-single"
-				},
-				{
-					"include": "#constants-and-special-vars"
-				}
-			]
+			"include": "#insert-command"
 		},
 		{
-			"begin": "\\%\\{",     
-			"end": "\\}",
-			"patterns": [
-				{
-					"include": "#keywords"
-				},
-				{
-					"include": "#strings"
-				},
-				{
-					"include": "#strings-single"
-				},
-				{
-					"include": "#constants-and-special-vars"
-				}
-			]
+			"include": "#deferred-command"
 		},
 		{
-			"begin": "\\!\\{",
-			"end": "\\}",
-			"patterns": [
-				{
-					"include": "#chapter"
-				}
-			]
+			"include": "#chapter"
 		}
 	],
 	"repository": {
-		"keywords": {
+		"command": {
+			"name": "meta.embedded.inline.bfcli",
 			"patterns": [
 				{
-					"name": "keyword.control.bfdialog",
-					"match": "\\b(if|else|reduce|echo)\\b"
+					"name": "string.quoted.double.bfcli",
+					"match": "."
 				}
 			]
-		},
-		"strings": {
-			"name": "string.quoted.double.bfdialog",
-			"begin": "\"",
-			"end": "\""
 		},
 		"chapter": {
-			"name": "support.class.bfdialog",
-			"match": "."
+			"begin": "\\!\\{",
+			"end": "\\}",
+			"patterns": [{ "include": "#string" }]
 		},
-		"strings-single": {
-			"name": "string.quoted.single.bfdialog",
-			"begin": "'",
-			"end": "'"
+		"immediate-command": {
+			"begin": "\\$\\{",
+			"end": "\\}",
+			"patterns": [{ "include": "#command" }]
 		},
-		"constants-and-special-vars": {
-			"patterns": [
-				{
-					"name": "constant.numeric.bfdialog",
-					"match": "\\b[+-]?\\d+(\\.\\d+)?\\b"
-				},
-				{
-					"name": "variable.language.bfdialog",
-					"match": "\\$\\S+"
-				},
-				{
-					"name": "entity.name.function.bfdialog",
-					"match": "\\b(pause|delay|nametag|speed|line|chapter|end)\\b"
-				}
-			]
+		"insert-command": {
+			"begin": "\\@\\{",
+			"end": "\\}",
+			"patterns": [{ "include": "#command" }]
+		},
+		"deferred-command": {
+			"begin": "\\%\\{",
+			"end": "\\}",
+			"patterns": [{ "include": "#command" }]
 		}
-	},
-	"scopeName": "source.bfdlg"
+	}
 }

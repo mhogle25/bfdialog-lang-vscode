@@ -18,6 +18,12 @@ Bracket syntax highlighting still happens inside of chapter closures, when every
 
 ## Release Notes
 
+### 0.0.2
+
+- Separated bfdialog syntax from bfcli syntax, treating bfcli as an embedded language
+
+- Chapter headers are now considered strings
+
 ### 0.0.1
 
 The very first release. Basic syntax highlighting.

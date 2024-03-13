@@ -2,7 +2,7 @@
   "name": "bfdialog-lang",
   "displayName": "BFDialog Lang",
   "description": "Syntax highlighting for BFDialog lang",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -10,17 +10,35 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "bfdialog",
-      "aliases": ["BFDialog", "bfdialog"],
-      "extensions": [".bfdlg"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "bfdialog",
-      "scopeName": "source.bfdlg",
-      "path": "./syntaxes/bfdialog.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "bfdialog",
+        "aliases": [ "BFDialog", "bfdialog" ],
+        "extensions": [ ".bfdlg" ],
+        "configuration": "./bfdialog-language-configuration.json"
+      },
+      {
+        "id": "bfcli",
+        "aliases": [ "BFCLI", "bfcli" ],
+        "extensions": [ ".bfcli" ],
+        "configuration": "./bfcli-language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bfcli",
+        "scopeName": "source.bfcli",
+        "path": "./syntaxes/bfcli.tmLanguage.json"
+      },
+      {
+        "language": "bfdialog",
+        "scopeName": "source.bfdlg",
+        "path": "./syntaxes/bfdialog.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.inline.bfcli": "bfcli"
+        }
+      }
+  ]
   },
   "repository": {
     "type": "git",

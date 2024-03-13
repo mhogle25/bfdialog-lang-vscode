@@ -1,0 +1,54 @@
+{
+    "scopeName": "source.bfcli",
+	"name": "bfcli",
+    "patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#strings-single"
+        },
+        {
+            "include": "#constants-and-special-vars"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.bfdialog",
+                    "match": "\\b(if|else|reduce|echo)\\b"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.bfdialog",
+            "begin": "\"",
+            "end": "\""
+        },
+        "strings-single": {
+            "name": "string.quoted.single.bfdialog",
+            "begin": "'",
+            "end": "'"
+        },
+        "constants-and-special-vars": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.bfdialog",
+                    "match": "\\b[+-]?\\d+(\\.\\d+)?\\b"
+                },
+                {
+                    "name": "variable.language.bfdialog",
+                    "match": "\\$\\S+"
+                },
+                {
+                    "name": "entity.name.function.bfdialog",
+                    "match": "\\b(pause|delay|nametag|speed|line|chapter|end)\\b"
+                }
+            ]
+        }
+    }
+}
