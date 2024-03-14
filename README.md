@@ -1,6 +1,6 @@
 # bfdialog-lang README
 
-BFDialog is a dialog scripting syntax that has high customizability and simple mechanics. This package adds syntax highlighting (with more to come) to VS Code for the BFDialog syntax. Download this as a vsix package [here](https://drive.google.com/file/d/1lxIB3_qN_bhoh18ajXzemDkXCdaxDg6o/view?usp=sharing).
+BFDialog is a dialog scripting syntax that has high customizability and simple mechanics. This package adds syntax highlighting (with more to come) to VS Code for the BFDialog syntax. Download this as a vsix package [here](https://drive.google.com/file/d/1AKoA3nzmrQNnbqsbbRp3M_vx2RXD-qB4/view?usp=sharing).
 
 ## Features
 
