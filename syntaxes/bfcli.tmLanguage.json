@@ -20,7 +20,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.bfdialog",
-                    "match": "\\b(if|else|reduce|echo)\\b"
+                    "match": "(?<=\\s)(if|else|reduce|echo)(?=\\s)"
                 }
             ]
         },
@@ -42,12 +42,16 @@
                 },
                 {
                     "name": "variable.language.bfdialog",
-                    "match": "\\$\\S+"
+                    "match": "(?<!\\S)\\$(?!some\\b|none\\b)(\\S+)"
                 },
                 {
                     "name": "entity.name.function.bfdialog",
-                    "match": "\\b(pause|delay|nametag|speed|line|chapter|end)\\b"
-                }
+                    "match": "(?<=\\s)(pause|delay|nametag|speed|line|chapter|end)(?=\\s)"
+                },
+				{
+					"name": "constant.language.bfdialog",
+					"match": "(?:(?<=\\s)|^)\\$(?:some|none)(?=\\s|$)"
+				}
             ]
         }
     }

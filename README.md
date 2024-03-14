@@ -6,7 +6,7 @@ BFDialog is a dialog scripting syntax that has high customizability and simple m
 
 Works on files with extension `.bfdlg`
 
-Highlights all closures, strings, numbers, and single-term calls. Highlights default CLI control commands: `[ if, else, reduce ]`, dialog control commands: `[ end ]`, default CLI operations: `[ echo ]`, and dialog operations: `[ pause, delay, speed, line, chapter, nametag ]`
+Highlights all closures, strings, numbers, and single-term calls. Highlights default CLI control commands: `[ if, else, reduce ]`, dialog control commands: `[ end ]`, default CLI operations: `[ echo ]`, and dialog operations: `[ pause, delay, speed, line, chapter, nametag ]`. Also does special highlighting for constants like `$some` and `$none`.
 
 ## Requirements
 
@@ -17,6 +17,10 @@ The bfo/dialog-textbox C# library (UNDER CONSTRUCTION)
 Bracket syntax highlighting for non-immediate commands still happens inside of command closures, when everything inside of a command closure should should be immediate. Not sure how to fix this, any help appreciated.
 
 ## Release Notes
+
+### 0.0.3
+
+- Added special syntax highlighting for `$some` and `$none` constants
 
 ### 0.0.2
 
