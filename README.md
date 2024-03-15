@@ -14,7 +14,9 @@ The bfo/dialog-textbox C# library (UNDER CONSTRUCTION)
 
 ## Known Issues
 
-Bracket syntax highlighting for non-immediate commands still happens inside of command closures, when everything inside of a command closure should should be immediate. Not sure how to fix this, any help appreciated.
+- Bracket syntax highlighting for non-immediate commands still happens inside of command closures, when everything inside of a command closure should should be immediate. Not sure how to fix this, any help appreciated.
+
+- Syntax highlighting turns off after any closure created inside of another closure, until the next closure is declared or the outer closure ends, and only when that nested closure has content. Not sure how to fix this, any help appreciated.
 
 ## Release Notes
 
