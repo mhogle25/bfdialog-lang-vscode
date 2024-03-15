@@ -20,7 +20,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.bfdialog",
-                    "match": "\\b(if|else|reduce|echo|eq)\\b"
+                    "match": "\\b(if|else|reduce|echo|eq|neq|lt|gt|lte|gte|llt|lgt|llte|lgte)\\b"
                 }
             ]
         },
