@@ -19,37 +19,37 @@
         "keywords": {
             "patterns": [
                 {
-                    "name": "keyword.control.bfdialog",
-                    "match": "\\b(if|else|reduce|echo|eq|neq|lt|gt|lte|gte|llt|lgt|llte|lgte)\\b"
+                    "name": "keyword.control.bfcli",
+                    "match": "\\b(if|else|reduce|echo|eq|neq|lt|gt|lte|gte|llt|lgt|llte|lgte|not)\\b"
                 }
             ]
         },
         "strings": {
-            "name": "string.quoted.double.bfdialog",
+            "name": "string.quoted.double.bfcli",
             "begin": "\"",
             "end": "\""
         },
         "strings-single": {
-            "name": "string.quoted.single.bfdialog",
+            "name": "string.quoted.single.bfcli",
             "begin": "'",
             "end": "'"
         },
         "constants-and-special-vars": {
             "patterns": [
                 {
-                    "name": "constant.numeric.bfdialog",
+                    "name": "constant.numeric.bfcli",
                     "match": "\\b[+-]?\\d+(\\.\\d+)?\\b"
                 },
                 {
-                    "name": "variable.language.bfdialog",
+                    "name": "variable.language.bfcli",
                     "match": "(?<!\\S)\\$(?!some\\b|none\\b|\\{\\b)(\\S+)"
                 },
                 {
-                    "name": "entity.name.function.bfdialog",
+                    "name": "entity.name.function.bfcli",
                     "match": "\\b(pause|delay|nametag|speed|line|chapter|end)\\b"
                 },
 				{
-					"name": "constant.language.bfdialog",
+					"name": "constant.language.bfcli",
 					"match": "(?:(?<=\\s)|^)\\$(?:some|none)(?=\\s|$)"
 				}
             ]

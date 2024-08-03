@@ -1,6 +1,6 @@
 # bfdialog-lang README
 
-BFDialog is a dialog scripting syntax that has high customizability and simple mechanics. This package adds syntax highlighting (with more to come) to VS Code for the BFDialog syntax. Download this as a vsix package [here](https://drive.google.com/file/d/1AKoA3nzmrQNnbqsbbRp3M_vx2RXD-qB4/view?usp=sharing).
+BFDialog is a dialog scripting syntax that has high customizability and simple mechanics. This package adds syntax highlighting (with more to come) to VS Code for the BFDialog syntax. Download this as a vsix package [here](https://drive.google.com/file/d/19uFvZN15rY1vNizoZUaBE0iLMBTBVi4L/view?usp=sharing).
 
 ## Features
 
@@ -20,6 +20,10 @@ The bfo/dialog-textbox C# library (UNDER CONSTRUCTION)
 
 ## Release Notes
 
+### 0.0.4
+
+- Brackets are now parentheses
+
 ### 0.0.3
 
 - Added special syntax highlighting for `$some` and `$none` constants
@@ -32,6 +36,6 @@ The bfo/dialog-textbox C# library (UNDER CONSTRUCTION)
 
 ### 0.0.1
 
-The very first release. Basic syntax highlighting.
+- The very first release. Basic syntax highlighting.
 
 ---
