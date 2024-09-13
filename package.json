@@ -2,7 +2,7 @@
   "name": "bfdialog-lang",
   "displayName": "BFDialog Lang",
   "description": "Syntax highlighting for BFDialog lang",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -13,14 +13,24 @@
     "languages": [
       {
         "id": "bfdialog",
-        "aliases": [ "BFDialog", "bfdialog" ],
-        "extensions": [ ".bfdlg" ],
+        "aliases": [
+          "BFDialog",
+          "bfdialog"
+        ],
+        "extensions": [
+          ".bfdlg"
+        ],
         "configuration": "./bfdialog-language-configuration.json"
       },
       {
         "id": "bfcli",
-        "aliases": [ "BFCLI", "bfcli" ],
-        "extensions": [ ".bfcli" ],
+        "aliases": [
+          "BFCLI",
+          "bfcli"
+        ],
+        "extensions": [
+          ".bfcli"
+        ],
         "configuration": "./bfcli-language-configuration.json"
       }
     ],
@@ -38,7 +48,7 @@
           "meta.embedded.inline.bfcli": "bfcli"
         }
       }
-  ]
+    ]
   },
   "repository": {
     "type": "git",
