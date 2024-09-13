@@ -46,7 +46,7 @@
                 },
                 {
                     "name": "entity.name.function.bfcli",
-                    "match": "\\b(pause|delay|nametag|speed|line|chapter|end)\\b"
+                    "match": "\\b(pause|delay|nametag|speed|line|chapter|end|b|i|u|s|hint|font|lang|color|bgcolor|fgcolor|outline_size|outline_color)\\b"
                 },
 				{
 					"name": "constant.language.bfcli",
