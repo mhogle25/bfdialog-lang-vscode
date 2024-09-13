@@ -9,6 +9,9 @@
 			"include": "#insert-command"
 		},
 		{
+			"include": "#instant-insert-command"
+		},
+		{
 			"include": "#deferred-command"
 		},
 		{
@@ -37,6 +40,11 @@
 		},
 		"insert-command": {
 			"begin": "\\@\\{",
+			"end": "\\}",
+			"patterns": [{ "include": "#command" }]
+		},
+		"instant-insert-command": {
+			"begin": "\\#\\{",
 			"end": "\\}",
 			"patterns": [{ "include": "#command" }]
 		},
