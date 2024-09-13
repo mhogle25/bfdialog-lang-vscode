@@ -1,6 +1,6 @@
 # bfdialog-lang README
 
-BFDialog is a dialog scripting syntax that has high customizability and simple mechanics. This package adds syntax highlighting (with more to come) to VS Code for the BFDialog syntax. Download this as a vsix package [here](https://drive.google.com/file/d/1JZl5q1l7yWrK03d1-FG-Nzqte6kha_rQ/view?usp=drive_link).
+BFDialog is a dialog scripting syntax that has high customizability and simple mechanics. This package adds syntax highlighting (with more to come) to VS Code for the BFDialog syntax. Download this as a vsix package [here](https://drive.google.com/file/d/1-vH4HXRoi8N8KU3J786yc4em_NNoSVKu/view?usp=drive_link).
 
 ## Features
 
@@ -19,6 +19,10 @@ The bfo/dialog-textbox C# library (alpha)
 - Syntax highlighting turns off after any closure created inside of another closure, until the next closure is declared or the outer closure ends, and only when that nested closure has content. Not sure how to fix this, any help appreciated.
 
 ## Release Notes
+
+### 0.0.6
+
+- Bug fixes
 
 ### 0.0.5
 
