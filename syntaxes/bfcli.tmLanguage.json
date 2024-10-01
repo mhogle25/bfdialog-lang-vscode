@@ -20,7 +20,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.bfcli",
-                    "match": "\\b(if|else|reduce|echo|eq|neq|lt|gt|lte|gte|llt|lgt|llte|lgte|not)\\b"
+                    "match": "\\b(if|else|first|echo|eq|neq|lt|gt|lte|gte|llt|lgt|llte|lgte|not|exec|join|concat)\\b"
                 }
             ]
         },
@@ -46,7 +46,7 @@
                 },
                 {
                     "name": "entity.name.function.bfcli",
-                    "match": "\\b(pause|delay|nametag|speed|line|chapter|end|b|i|u|s|hint|font|lang|color|bgcolor|fgcolor|outline_size|outline_color)\\b"
+                    "match": "\\b(pause|delay|nametag|speed|line|chapter|end|b|i|u|s|hint|font|lang|color|bgcolor|fgcolor|outline_size|outline_color|pop)\\b"
                 },
 				{
 					"name": "constant.language.bfcli",
