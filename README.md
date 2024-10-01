@@ -6,7 +6,7 @@ BFDialog is a dialog scripting syntax with high customizability and simple mecha
 
 Works on files with extension `.bfdlg`
 
-Highlights all closures, strings, numbers, and single-term calls. Highlights default CLI control commands: `[ if, else, reduce, eq, neq, lt, gt, lte, gte, llt, lgt, llte, lgte ]`, dialog control commands: `[ end ]`, default CLI operations: `[ echo ]`, dialog operations: `[ pause, delay, speed, line, chapter, nametag ]`, and dialog styling macros: `[ b, i, u, s, hint, font, lang, color, bgcolor, fgcolor, outline_size, outline_color ]`. Also does special highlighting for constants like `$some` and `$none`.
+Highlights all closures, strings, numbers, and single-term calls. Highlights default CLI control commands: `[ if, else, reduce, eq, neq, lt, gt, lte, gte, llt, lgt, llte, lgte ]`, dialog control commands: `[ end ]`, default CLI operations: `[ echo ]`, dialog operations: `[ pause, delay, speed, line, chapter, nametag ]`, and dialog styling operations: `[ b, i, u, s, hint, font, lang, color, bgcolor, fgcolor, outline_size, outline_color ]`. Also does special highlighting for constants like `$some` and `$none`.
 
 ## Requirements
 
@@ -27,7 +27,7 @@ The bfo/dialog-textbox C# library (alpha)
 
 - Instant inserts
 
-- Styling macros
+- Styling operations
 
 ### 0.0.4
 
