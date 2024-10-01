@@ -20,7 +20,7 @@ The bfo/dialog-textbox C# library (alpha)
 
 ## Release Notes
 
-### 0.0.6
+### 0.0.7
 
 - Added new operations: `[ exec, join, concat ]`
 
