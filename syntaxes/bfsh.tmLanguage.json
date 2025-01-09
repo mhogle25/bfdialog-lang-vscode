@@ -91,7 +91,7 @@
             "patterns": [
                 {
                     "name": "constant.character.escape.bfsh",
-                    "match": "\\\\[\"'\\\\]"
+                    "match": "\\\\."
                 }
             ]
         }
