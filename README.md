@@ -20,11 +20,17 @@ The bfo/dialog-textbox C# library (alpha)
 
 ## Release Notes
 
+### 0.0.8
+
+- Syntax highlighting for macros
+
 ### 0.0.7
 
 - Added new operations: `[ exec, join, concat ]`
 
 - `reduce` renamed to `first`
+
+- Added highlighting for math and random number generation
 
 ### 0.0.6
 

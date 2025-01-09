@@ -13,6 +13,9 @@
         },
         {
             "include": "#constants-and-special-vars"
+        },
+        {
+            "include": "#functions"
         }
     ],
     "repository": {
@@ -21,6 +24,14 @@
                 {
                     "name": "keyword.control.bfcli",
                     "match": "\\b(if|else|first|echo|eq|neq|lt|gt|lte|gte|llt|lgt|llte|lgte|not|exec|join|concat)\\b"
+                },
+                {
+                    "name": "keyword.operator.math",
+                    "match": "[\\+\\-\\*\\?\\^\\%\\/]"
+                },
+                {
+                    "name": "storage.type.primitive",
+                    "match": "\\b(int|float|txt)\\b"
                 }
             ]
         },
@@ -52,6 +63,18 @@
 					"name": "constant.language.bfcli",
 					"match": "(?:(?<=\\s)|^)\\$(?:some|none)(?=\\s|$)"
 				}
+            ]
+        },
+        "functions": {
+            "patterns": [
+                {
+                    "name": "variable.parameter.bfcli",
+                    "match": ".+(?=\\-\\>)"
+                },
+                {
+                    "name": "variable.parameter.bfcli",
+                    "match": ":\\w+"
+                }
             ]
         }
     }
