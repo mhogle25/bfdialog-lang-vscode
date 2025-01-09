@@ -9,6 +9,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Changed CLI to Sh in all naming conventions
 
+- Added escapes
+
 ### 0.0.8
 
 - Syntax highlighting for macros

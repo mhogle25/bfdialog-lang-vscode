@@ -16,6 +16,9 @@
         },
         {
             "include": "#functions"
+        },
+        {
+            "include": "#escapes"
         }
     ],
     "repository": {
@@ -74,6 +77,14 @@
                 {
                     "name": "variable.parameter.bfsh",
                     "match": ":\\w+"
+                }
+            ]
+        },
+        "escapes": {
+            "patterns": [
+                {
+                    "name": "constant.character.escape.example",
+                    "match": "\\\\."
                 }
             ]
         }
