@@ -20,15 +20,15 @@
 	],
 	"repository": {
 		"command": {
-			"name": "meta.embedded.inline.bfcli",
-			"patterns": [{ "include": "source.bfcli" }]
+			"name": "meta.embedded.inline.bfsh",
+			"patterns": [{ "include": "source.bfsh" }]
 		},
 		"chapter": {
 			"begin": "\\!\\{",
 			"end": "\\}",
 			"patterns": [
 				{
-					"name": "string.quoted.double.bfcli",
+					"name": "string.quoted.double.bfsh",
 					"match": "."
 				}
 			]

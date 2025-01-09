@@ -1,6 +1,6 @@
 {
-    "scopeName": "source.bfcli",
-	"name": "bfcli",
+    "scopeName": "source.bfsh",
+	"name": "bfsh",
     "patterns": [
         {
             "include": "#keywords"
@@ -22,7 +22,7 @@
         "keywords": {
             "patterns": [
                 {
-                    "name": "keyword.control.bfcli",
+                    "name": "keyword.control.bfsh",
                     "match": "\\b(if|else|first|echo|eq|neq|lt|gt|lte|gte|llt|lgt|llte|lgte|not|exec|join|concat)\\b"
                 },
                 {
@@ -36,31 +36,31 @@
             ]
         },
         "strings": {
-            "name": "string.quoted.double.bfcli",
+            "name": "string.quoted.double.bfsh",
             "begin": "\"",
             "end": "\""
         },
         "strings-single": {
-            "name": "string.quoted.single.bfcli",
+            "name": "string.quoted.single.bfsh",
             "begin": "'",
             "end": "'"
         },
         "constants-and-special-vars": {
             "patterns": [
                 {
-                    "name": "constant.numeric.bfcli",
+                    "name": "constant.numeric.bfsh",
                     "match": "\\b[+-]?\\d+(\\.\\d+)?\\b"
                 },
                 {
-                    "name": "variable.language.bfcli",
+                    "name": "variable.language.bfsh",
                     "match": "(?<!\\S)\\$(?!some\\b|none\\b|\\{\\b)(\\S+)"
                 },
                 {
-                    "name": "entity.name.function.bfcli",
+                    "name": "entity.name.function.bfsh",
                     "match": "\\b(pause|delay|nametag|speed|line|chapter|end|b|i|u|s|hint|font|lang|color|bgcolor|fgcolor|outline_size|outline_color|pop|ctx)\\b"
                 },
 				{
-					"name": "constant.language.bfcli",
+					"name": "constant.language.bfsh",
 					"match": "(?:(?<=\\s)|^)\\$(?:some|none)(?=\\s|$)"
 				}
             ]
@@ -68,11 +68,11 @@
         "functions": {
             "patterns": [
                 {
-                    "name": "variable.parameter.bfcli",
+                    "name": "variable.parameter.bfsh",
                     "match": ".+(?=\\-\\>)"
                 },
                 {
-                    "name": "variable.parameter.bfcli",
+                    "name": "variable.parameter.bfsh",
                     "match": ":\\w+"
                 }
             ]
