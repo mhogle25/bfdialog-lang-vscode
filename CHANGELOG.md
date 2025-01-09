@@ -5,11 +5,13 @@ All notable changes to the "bfdialog-lang" extension will be documented in this 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 ## Release Notes
 
+### 0.0.10
+
+- Added escapes
+
 ### 0.0.9
 
 - Changed CLI to Sh in all naming conventions
-
-- Added escapes
 
 ### 0.0.8
 
