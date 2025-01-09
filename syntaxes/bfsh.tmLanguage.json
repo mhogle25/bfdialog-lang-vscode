@@ -3,22 +3,19 @@
 	"name": "bfsh",
     "patterns": [
         {
-            "include": "#keywords"
-        },
-        {
             "include": "#strings"
         },
         {
             "include": "#strings-single"
         },
         {
+            "include": "#keywords"
+        },
+        {
             "include": "#constants-and-special-vars"
         },
         {
             "include": "#functions"
-        },
-        {
-            "include": "#escapes"
         }
     ],
     "repository": {
@@ -41,12 +38,22 @@
         "strings": {
             "name": "string.quoted.double.bfsh",
             "begin": "\"",
-            "end": "\""
+            "end": "\"",
+            "patterns": [
+                {
+                    "include": "#escapes"
+                }
+            ]
         },
         "strings-single": {
             "name": "string.quoted.single.bfsh",
             "begin": "'",
-            "end": "'"
+            "end": "'",
+            "patterns": [
+                {
+                    "include": "#escapes"
+                }
+            ]
         },
         "constants-and-special-vars": {
             "patterns": [
@@ -64,7 +71,7 @@
                 },
 				{
 					"name": "constant.language.bfsh",
-					"match": "(?:(?<=\\s)|^)\\$(?:some|none)(?=\\s|$)"
+					"match": "(?:(x?<=\\s)|^)\\$(?:some|none)(?=\\s|$)"
 				}
             ]
         },
@@ -83,8 +90,8 @@
         "escapes": {
             "patterns": [
                 {
-                    "name": "constant.character.escape.example",
-                    "match": "\\\\."
+                    "name": "constant.character.escape.bfsh",
+                    "match": "\\\\[\"'\\\\]"
                 }
             ]
         }
