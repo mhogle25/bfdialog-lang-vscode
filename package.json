@@ -23,29 +23,29 @@
         "configuration": "./bfdialog-language-configuration.json"
       },
       {
-        "id": "bfcli",
+        "id": "bfsh",
         "aliases": [
-          "BFCLI",
-          "bfcli"
+          "BFSH",
+          "bfsh"
         ],
         "extensions": [
-          ".bfcli"
+          ".bfsh"
         ],
-        "configuration": "./bfcli-language-configuration.json"
+        "configuration": "./bfsh-language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "bfcli",
-        "scopeName": "source.bfcli",
-        "path": "./syntaxes/bfcli.tmLanguage.json"
+        "language": "bfsh",
+        "scopeName": "source.bfsh",
+        "path": "./syntaxes/bfsh.tmLanguage.json"
       },
       {
         "language": "bfdialog",
         "scopeName": "source.bfdlg",
         "path": "./syntaxes/bfdialog.tmLanguage.json",
         "embeddedLanguages": {
-          "meta.embedded.inline.bfcli": "bfcli"
+          "meta.embedded.inline.bfsh": "bfsh"
         }
       }
     ]
